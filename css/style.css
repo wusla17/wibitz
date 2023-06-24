@@ -1,0 +1,1060 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+header {
+	height: 80px;
+	margin-bottom: 110px;
+}
+header section.wrapper {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header h1 {
+	width: 100px;
+}
+header h1 img {
+	width: 100%;
+	display: block;
+	margin-right: 5px;
+
+}
+header nav.middle {
+	display: block;
+    height: 22px;
+}
+header nav.middle ul.navbar {
+	display: flex;
+}
+header nav.middle ul.navbar li {
+	margin-right: 25px;
+}
+header nav.middle ul.navbar li:last-child {
+	margin-right: 0;
+}
+header nav.middle ul.navbar li a {
+	font-size: 15px;
+	font-family: 'GT-Eesti';
+	font-weight: 200;
+	font-style: normal;
+}
+header ul.right {
+	display: flex;
+}
+header ul.right li {
+	margin-right: 0;
+}
+header ul.right li:first-child {
+	margin-right: 25px;
+}
+header ul.right li a {
+	font-size: 15px;
+	font-family: 'GT-Eesti';
+	font-weight: 200;
+	font-style: normal;
+}
+header ul.right li a.button {
+	background-color: #FFE4DA;
+	border-radius: 50px;
+	padding: 12px 20px;
+	color: #FF8258;
+}
+
+/* spotlight  */
+#spotlight { 
+
+}
+#spotlight section.wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10%;
+}
+#spotlight div.left {
+	width: 80%;
+	display: block;
+}
+#spotlight div.left h2 {
+	font-size: 50px;
+	font-family: 'GT-Eesti';
+	font-weight: 700;
+	/* font-style: bold; */
+	width: 57%;
+	margin: 30px 0 15px 0;
+
+}
+#spotlight div.left p {
+	font-size: 20px;
+	font-family: 'GT-Eesti';
+	font-weight: 300;
+	font-style: normal;
+	width: 57%;
+	margin: 32px 0 15px;
+}
+#spotlight div.left form {
+	display: flex;
+	margin: 20px 0 0 ;
+	position: relative;
+}
+#spotlight div.left form input[type="email"] {
+	border: 2px solid #eeee;
+	padding: 12px 22px;
+    padding-right: 71px;
+	border-radius: 8px;
+}
+#spotlight div.left form input[type="submit"] {
+	border: 2px solid;
+	background: #0056FB;
+	padding: 12px 20px;
+	border-radius: 8px;
+	position: absolute;
+	color: #fff;
+	left: 173px;
+}
+#spotlight div.right {
+	width: 20%;
+}
+#spotlight div.right img.home {
+	display: block;
+    width: 44%;
+    position: absolute;
+    left: 719px;
+    top: 157px;
+}
+#spotlight div.right img.curve {
+	display: block;
+    width: 6%;
+    position: absolute;
+    left: 955px;
+    top: 123px;
+	stroke: #FF8258;
+}
+#spotlight div.right div img.play{	
+    padding: 20px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 9px;
+    width: 61px;
+}
+#spotlight div.right div{	
+	display: block;
+    width: 5%;
+    height: 15%;
+    position: absolute;
+    right: 429px;
+    top: 87px;
+    background-color: #FF8258;
+    border-radius: 51px;
+}
+
+/* brand */
+#brand  {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+#brand div.top {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 45px;
+	margin-top: 18px;
+}
+#brand div.top h3 {
+	font-size: 32px;
+	font-family: 'GT-Eesti';
+	font-weight: 500;
+	font-style: bold;
+}
+#brand div.bottom {
+	
+}
+#brand  div.bottom ul.imglogo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+#brand  div.bottom ul.imglogo li {
+	margin-right: 20px;
+	display: block;
+	width: 100%;
+}
+#brand  div.bottom ul.imglogo li:last-child {
+	margin-right: 0;
+}
+#brand  div.bottom ul li img {
+
+}
+
+
+/*highlight*/
+#highlight { 
+	
+}
+#highlight section.item { 
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+#highlight section.item .image_container  {
+	width: 50%;
+}
+#highlight section.item .image_container img {
+	width: 100%;
+	display: block;
+}
+#highlight section.item div.box {
+	width: 33%;
+}
+#highlight section.item div.box div.content_box {
+	width: 100%;
+	margin-bottom: 50px;
+}
+#highlight section.item div.box div.content_box h3 {
+	color: #000;
+	margin: 0 0 16px;
+	font-family: 'GT-Eesti';
+	font-style: bold;
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+#highlight section.item div.box div.content_box p {
+	color: #000;
+	margin: 0 0 24px;
+	font-family: 'GT-Eesti';
+	font-style: normal;
+	font-size: 16px;
+	margin-bottom: 31px;
+}
+#highlight section.item div.box div.content_box a {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'GT-Eesti';
+	font-style: normal;
+	background-color: #0056FB;
+	padding: 16px 21px;
+	border-radius: 8px;
+	margin-bottom: 60px;
+}
+#highlight section.item div.box div.content_box img.edit {
+	background-color: #FF8258;
+    display: block;
+    width: 17%;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    padding: 13px;
+}
+#highlight section.item div.box div.content_box img.lighting {
+	background-color: #FFC836;
+    display: block;
+    width: 17%;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    padding: 13px;
+}
+#highlight section.item div.box div.content_box img.film {
+	background-color: #3DD278;
+    display: block;
+    width: 17%;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    padding: 13px;
+}
+
+#highlight section.item:last-child {
+	padding-bottom: 64px;
+}
+#highlight section.item div.box div.bottombox {
+
+}
+#highlight section.item div.box div.bottombox hr.line {
+	width: 255px;
+    height: 0.5px;
+    background: #9B9B9B;
+	margin: 60px 0;
+}
+#highlight section.item div.box div.bottombox p {
+	color: #9B9B9B;
+	margin: 0 0 11px;
+	font-family: 'GT-Eesti';
+	font-style: normal;
+	font-size: 12px;
+}
+#highlight section.item div.box div.bottombox p.special a {
+	color: #2d2d2d;
+	margin: 0 0 26px;
+	font-family: 'GT-Eesti';
+	font-style: normal;
+	font-size: 14px;
+}
+#highlight section.item div.box div.bottombox img {
+	display: block;
+	width: 20%;
+}
+#highlight section.item:nth-child(even) {
+	justify-content: center;
+	padding: 90px;
+	width: 100%;
+	background: #eeee;
+}
+#highlight section.item:nth-child(even)  div.box {
+	margin-left: 65px;
+}
+#card {
+	padding: 64px 0;
+	justify-content: center;
+	align-items: center;
+}
+#card section.content {
+	
+}
+#card section.content div.top {
+	width: 25%;
+    display: block;
+	margin-bottom: 50px;
+}
+#card section.content div.top h3 {
+	font-size: 30px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: bold;
+	margin: 0 0 16px;
+}
+#card section.content div.cards {
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	/* align-items: center; */
+}
+#card section.content div.carditem {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	padding: 16px;
+	position: relative;
+}
+#card section.content div.carditem img {
+	display: block;
+	width: 100%;
+	margin: 0 0 16px;
+}
+#card section.content div.carditem h3 {
+	font-size: 15px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: normal;
+	margin: 0 0 16px;
+}
+#card section.content div.carditem div.img img.housing {
+	position: absolute;
+    top: 260px;
+    left: 34px;
+    width: 91px;
+    padding: 4px;
+    background-color: #fff;
+}
+#card section.content div.carditem div.img img.hubspot{
+	position: absolute;
+    top: 253px;
+    left: 28px;
+    width: 91px;
+    padding: 4px;
+    background-color: #fff;
+}
+#card section.content div.carditem div.img img.nbc{
+	position: absolute;
+    top: 233px;
+    left: 28px;
+    width: 47px;
+    padding: 4px;
+    background-color: #fff;
+}
+
+/* profile */
+
+#profile {
+	padding: 64px 0;
+	justify-content: center;
+	align-items: center;
+}
+#profile section.content {
+	
+}
+#profile section.content div.top {
+	width: 25%;
+    display: block;
+	margin-bottom: 50px;
+}
+#profile section.content div.top h3 {
+	font-size: 30px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: bold;
+	margin: 0 0 16px;
+}
+#profile section.content div.cards {
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	/* align-items: center; */
+}
+#profile section.content div.carditem {
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	padding: 16px;
+	position: relative;
+}
+#profile section.content div.carditem img {
+	display: block;
+	width: 100%;
+	margin: 0 0 16px;
+}
+#profile section.content div.carditem h3 {
+	font-size: 30px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: bold;
+	margin: 0 0 16px;
+}
+#profile section.content div.carditem p {
+	font-size: 18px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: 500;
+}
+#profile section.content div.carditem p.middle {
+	font-size: 15px;
+	color: #6c7076;
+	font-family: 'GT-Eesti';
+	font-weight: 100;
+}
+#profile section.content div.carditem div.img img.hubspot{
+	position: absolute;
+    top: 364px;
+    left: 28px;
+    width: 89px;
+    padding: 18px;
+    background-color: #fff;
+}
+#profile section.content div.carditem div.img img.nbc{
+	position: absolute;
+    top: 364px;
+    left: 28px;
+    width: 89px;
+    padding: 18px;
+    background-color: #fff;
+}
+#marketing {
+	background: #eee;
+	padding-top: 26px;
+	display: flex;
+	align-items: center;
+}
+#marketing div.top {
+	display: block;
+	margin: 20px auto 89px;
+	text-align: center;
+}
+#marketing div.top h2 {
+	font-size: 30px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: 700;
+}
+#marketing div.card  {
+
+}
+#marketing div.card ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+#marketing div.card ul li {
+    width: 30%;
+	padding: 0 67px 0;
+	margin-bottom: 90px;
+}
+#marketing div.card ul li img {
+	display: block;
+	width: 100%;
+	margin-bottom: 25px;
+}
+#marketing div.card ul.marketingul li:nth-child(2) :nth-child(5){
+	border-left: 1px solid #e2e2e2;
+	margin: 0 12px 90px;
+	border-right: 1px solid #e2e2e2;
+}
+#marketing div.card ul li h6 {
+	font-size: 23px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: 500;
+	text-align: center;
+	margin: 0 auto;
+}
+#marketing div.card ul li p {
+	font-size: 12px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: 100;
+	text-align: center;
+	margin: 0 auto;
+}
+#marketing div.bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 41px 39px;
+	background: #a5c4ff;
+	width: 63%;
+    margin-left: 19%;
+    border-radius: 10px;
+	position: relative;
+	margin-bottom: 50px;
+}
+#marketing div.bottom img {
+	display: block;
+    position: absolute;
+    padding: 10px;
+    padding: 13px;
+    width: 48px;
+    background: #fff;
+    border-radius: 50px;
+    top: -22px;
+    left: 10px;
+}
+#marketing div.bottom h6 {
+	font-size: 20px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: 400;
+	width: 50%;
+}
+#marketing div.bottom a {
+	background: #0056FB;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'GT-Eesti';
+    font-weight: 400;
+    padding: 11px 19px;
+    border-radius: 8px;
+}
+#businesscard {
+
+}
+#businesscard div.top {
+	text-align: center;
+	margin: 30px auto;
+	width: 774px;
+}
+#businesscard div.top h1 {
+	font-size: 50px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: 700;
+}
+#businesscard div.box {
+	display: flex;
+	flex-direction: row;
+}
+#businesscard div.box div.item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px 25px 198px;
+	width: 100%;
+}
+#businesscard div.box div.item:first-child {
+	background: #b6cfff;
+}
+#businesscard div.box div.item:nth-child(even) {
+	background: #fff0c7;
+	margin: 0  50px;
+}
+#businesscard div.box div.item:last-child {
+	background: #ffd3c4;
+}
+#businesscard div.box div.item img.itemimg {
+	background: #fff;
+	border-radius: 50px;
+	padding: 20px;
+	width: 22%;
+}
+#businesscard div.box div.item h5 {
+	font-size: 25px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: 500;
+	margin: 20px 0;
+}
+#businesscard div.box div.item p {
+	font-size: 15px;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	font-weight: 400;
+	margin: 15px 0;
+	width: 203px;
+}
+#businesscard div.box div.item a {
+	padding: 20px 28px;
+	border-radius: 10px;
+	color: #fff;
+	margin-bottom: 28px;
+}
+#businesscard div.box div.item a.first {
+	background: #0056FB;
+}
+#businesscard div.box div.item a.second {
+	background: #FF794B;
+}
+#businesscard div.box div.item a.third {
+	background: #FFC836;
+}
+#businesscard div.box div.item div.imgpo  {
+	position: relative;
+	width: 90%;
+}
+#businesscard div.box div.item div.imgpo img.card{
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+}
+
+/* video */
+#video {
+	margin: 176px 0 0;
+}
+#video div.top {
+	width: 45%;
+	margin-bottom: 60px;
+}
+#video div.top h3 {
+	font-size: 50px;
+	font-weight: 700;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+}
+#video div.cardbox {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+#video div.cardbox div.containerbox {
+	width: 80%;
+}
+#video div.cardbox div.containerbox img {
+	width: 80%;
+	display: block;
+	margin: 0 15px 39px 24px;
+}
+#video div.cardbox div.containerbox img.attention{
+	margin-left: 0;
+}
+#video div.cardbox div.containerbox h6 {
+	margin-bottom: 20px;
+}
+#video div.cardbox div.containerbox p {
+	font-size: 19px;
+	font-weight: 300;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	margin-top: 20px;
+}
+#video div.cardbox div.containerbox a {
+	font-size: 12px;
+	font-weight: 600;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	text-decoration: underline;
+	margin-bottom: 30px;
+}
+#video div.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+}
+#video div.button a {
+	padding: 16px 24px;
+	background: #0056FB;
+	color: #fff;
+	border-radius: 4px;
+	margin-bottom: 60px;
+}
+#registration {
+	background: #2a2a2a;
+}
+#registration section.all {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#registration section.all div.left {
+	width: 50%;
+	padding: 100px 0 0 0;
+}
+#registration section.all div.left div.top {
+	padding: 10px 0 0;
+}
+#registration section.all div.left div.top h1 {
+	color: #fff;
+	font-size: 60px;
+	font-weight: 600;
+	font-family: 'GT-Eesti';
+	margin-bottom: 30px;
+	width: 57%;
+}
+#registration section.all div.left div.top p {
+	color: #aaaaaa;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'GT-Eesti';
+	margin-bottom: 30px;
+	width: 80%;
+}
+#registration section.all div.left hr.line {
+	width: 49%;
+    border: 0.5px solid #7d7d7d;
+    margin: 0 0 34px;
+}
+#registration section.all div.left div.middle {
+	margin-bottom: 30px;
+}
+#registration section.all div.left div.middle h6 {
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+	font-family: 'GT-Eesti';
+	margin-bottom: 30px;
+}
+#registration section.all div.left div.middle p {
+	color: #aaaaaa;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'GT-Eesti';
+	margin-bottom: 30px;
+	width: 80%;
+}
+#registration section.all div.left div.bottom {
+	
+}
+#registration section.all div.left div.bottom p.name {
+	color: #aaaaaa;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'GT-Eesti';
+	margin-bottom: 10px;
+}
+#registration section.all div.left div.bottom p.position {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 200;
+	font-family: 'GT-Eesti';
+	margin-bottom: 10px;
+}
+#registration section.all div.left div.bottom ul.profile {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 50px;
+	margin-bottom: 26px;
+}
+#registration section.all div.left div.bottom ul.profile li {
+	margin-left: 19px;
+}
+#registration section.all div.left div.bottom ul.profile li img {
+	border-radius: 100px;
+}
+#registration section.all div.left div.bottom ul.profile li:first-child {
+	margin-left: 0;
+}
+#registration section.all div.left div.bottom ul.brand {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#registration section.all div.left div.bottom ul.brand li {
+	width:45px;
+	margin-left: 19px;
+}
+#registration section.all div.left div.bottom ul.brand li:first-child {
+	margin-left: 0;
+}
+#registration section.all div.left div.bottom ul.brand li img {
+	display: block;
+	width: 100%;
+	margin-bottom: 40px;
+}
+#registration section.all div.right {
+    width: 44%;
+}
+#registration section.all div.right div.form {
+	padding: 70px;
+	background: #fff;
+}
+#registration section.all div.right div.form h2 {
+	font-size: 30px;
+	font-weight: 600;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	margin: 20px 0 30px;
+}
+#registration section.all div.right div.form  form {
+
+}
+#registration section.all div.right div.form form input {
+	
+}
+#registration section.all div.right div.form form input[type="email"] {
+	width: 45%;
+	border: 0.5px solid #adadad;
+	padding: 13px 13px;
+	border-radius: 10px;
+	margin-right: 15px;
+}
+#registration section.all div.right div.form form input[type="text"] {
+	width: 45%;
+	border: 0.5px solid #adadad;
+	padding: 13px 13px;
+	border-radius: 10px;
+}
+#registration section.all div.right div.form form input#lname {
+	margin-right: 15px;
+}
+#registration section.all div.right div.form form input[type="submit"] {
+	width: 100%;
+	background: #0056FB;
+	color: #fff;
+	padding: 20px 28px;
+	cursor: pointer;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+#registration section.all div.right div.form form select {
+	width: 45%;
+	border: 0.5px solid #adadad;
+	padding: 13px 13px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+#registration section.all div.right div.form form select:nth-child(odd) {
+	margin-right: 15px;
+	
+}
+
+#registration section.all div.right div.form form select option {
+	
+}
+
+#footer {
+	padding: 30px;
+}
+#footer section.wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+}
+#footer div.left {
+	width: 25%;
+}
+#footer div.left h6 {
+	font-size: 25px;
+	font-weight: 400;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	margin: 0 0 30px;
+}
+#footer div.left ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 80%;
+}
+#footer div.left ul li {
+	margin-left: 10px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+#footer div.left ul li:first-child {
+	margin-left: 0;
+}
+#footer div.left ul li a {
+	background: #c5c5c5;
+	border-radius: 25px;
+	padding: 8px;
+}
+#footer div.left ul li a img {
+	width: 34%;
+}
+#footer div.left a.global {
+	display: flex;
+}
+#footer div.left a.global img {
+	width: 19px;
+}
+#footer div.left a.global span {
+	margin-left: 5px;
+}
+#footer div.left div.languge {
+	margin-top: 20px;
+}
+#footer div.left div.languge a.lang {
+	font-size: 15px;
+	font-weight: 600;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	margin: 0 0 30px;
+}
+#footer div.right {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    width: 75%;
+	margin-left: 50px;
+}
+#footer div.right ul {
+
+}
+#footer div.right ul h6 {
+	font-size: 15px;
+	font-weight: 600;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	margin: 0 0 10px;
+}
+#footer div.right ul li {
+	margin-bottom: 6px;
+}
+#footer div.right ul li a {
+	position: relative;
+}
+#footer div.right ul li img {
+	width: 20px;
+}
+#footer div.right ul li a span {
+	font-size: 15px;
+	font-weight: 600;
+	color: #091e42;
+	font-family: 'GT-Eesti';
+	margin: 0 0 10px;
+	position: absolute;
+}
